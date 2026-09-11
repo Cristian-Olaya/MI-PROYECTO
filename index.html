@@ -23,7 +23,7 @@
             background-color: #0d5c75;
             color: white;
             text-align: center;
-            padding: 50px 20px;
+            padding: 60px 20px 80px; /* Se añade espacio abajo para la superposición */
         }
 
         header h1 {
@@ -37,27 +37,29 @@
             opacity: 0.95;
         }
 
-        /* Contenedor principal */
+        /* Contenedor principal que se sube sobre el header */
         .container {
             max-width: 750px;
-            margin: 30px auto;
+            margin: -50px auto 40px; /* Margen negativo para subir el recuadro */
             padding: 0 15px;
+            position: relative;
+            z-index: 10;
         }
 
-        /* Tarjetas blancas con borde suave */
+        /* Tarjetas blancas */
         .card {
             background: white;
             border-radius: 12px;
             padding: 25px;
             margin-bottom: 25px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
         }
 
         .card h2 {
             color: #0d5c75;
             font-size: 1.5rem;
             margin-bottom: 15px;
-            border-bottom: 2px solid #0d5c75;
+            border-bottom: 3px solid #0d5c75;
             display: inline-block;
             padding-bottom: 4px;
         }
@@ -98,13 +100,21 @@
         <section class="card">
             <h2>Sobre mí</h2>
             <p>Soy Cristian David Olaya, tengo 16 años. Lugar de nacimiento: Cartagena del Chairá, Caquetá.</p>
-            <p>Me gusta cocinar para mi familia y amigos, tocar la guitarra y explorar formas creativas de aprender algo nuevo cada día. Mi motivación es saber que puedo construir un gran futuro.</p>
+            <p>En mi tiempo libre me gusta cocinar para mi familia y amigos, tocar la guitarra y explorar formas creativas de aprender algo nuevo cada día.</p>
+        </section>
+
+        <section class="card">
+            <h2>Cosas que me apasionan</h2>
+            <ul>
+                <li><strong>Música y guitarra:</strong> Mi espacio favorito para desconectarme, comparar la acústica de varios modelos y sacar canciones a oído.</li>
+                <li><strong>Cocina y sabores:</strong> Experimentar con ingredientes, aprender sobre recetas tradicionales colombianas y descubrir el origen de cada preparación.</li>
+            </ul>
         </section>
 
         <section class="card">
             <h2>Formación Académica</h2>
             <ul>
-                <li><strong>Colegio:</strong> Chairá José maría Córdoba </li>
+                <li><strong>Colegio:</strong> Cartagena del Chairá - 2026</li>
                 <li><strong>Curso:</strong> Grado 11 | <strong>Materias favoritas:</strong> Química y Educación Física.</li>
                 <li><strong>Metas académicas:</strong> Graduarme con excelentes resultados e ingresar a la Universidad de Antioquia para estudiar Gastronomía.</li>
             </ul>
@@ -114,7 +124,7 @@
             <h2>Habilidades</h2>
             <ul>
                 <li>Creatividad en la cocina y exploración gastronómica.</li>
-                <li>Tocar guitarra acústica.</li>
+                <li>Tocar guitarra acústica a oído.</li>
                 <li>Trabajo en equipo, adaptabilidad y buena comunicación.</li>
             </ul>
         </section>
@@ -138,4 +148,3 @@
 
 </body>
 </html>
-
